@@ -17,8 +17,8 @@ export function Hero() {
     >
       <div className="container-tech flex min-h-svh flex-col justify-center gap-10 py-24 md:gap-14 md:py-32">
         <ScrollReveal delay={0} distance={16}>
-          <p className="text-mono text-ink-400 dark:text-ink-500 text-xs uppercase tracking-[0.24em]">
-            <span className="text-accent-500">●</span>{' '}
+          <p className="text-mono text-ink-500 dark:text-ink-400 text-xs uppercase tracking-[0.24em]">
+            <span aria-hidden="true" className="text-accent-600 dark:text-accent-500">●</span>{' '}
             <span>qubika.studio · roma · est. 2023</span>
           </p>
         </ScrollReveal>
@@ -67,21 +67,21 @@ export function Hero() {
         <ScrollReveal delay={0.4} distance={12}>
           <dl className="text-mono text-ink-400 dark:text-ink-500 mt-12 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-3 text-xs uppercase tracking-wider md:grid-cols-4">
             <div>
-              <dt className="text-ink-300 dark:text-ink-600">{'// settore'}</dt>
+              <dt className="text-ink-500 dark:text-ink-400">{'// settore'}</dt>
               <dd className="text-ink-700 dark:text-ink-200 mt-1">
                 Edizione videogiochi
               </dd>
             </div>
             <div>
-              <dt className="text-ink-300 dark:text-ink-600">{'// ateco'}</dt>
+              <dt className="text-ink-500 dark:text-ink-400">{'// ateco'}</dt>
               <dd className="text-ink-700 dark:text-ink-200 mt-1">58.21.00</dd>
             </div>
             <div>
-              <dt className="text-ink-300 dark:text-ink-600">{'// team'}</dt>
+              <dt className="text-ink-500 dark:text-ink-400">{'// team'}</dt>
               <dd className="text-ink-700 dark:text-ink-200 mt-1">6 persone</dd>
             </div>
             <div>
-              <dt className="text-ink-300 dark:text-ink-600">{'// sede'}</dt>
+              <dt className="text-ink-500 dark:text-ink-400">{'// sede'}</dt>
               <dd className="text-ink-700 dark:text-ink-200 mt-1">Roma, IT</dd>
             </div>
           </dl>

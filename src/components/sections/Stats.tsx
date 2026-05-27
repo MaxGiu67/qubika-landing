@@ -61,7 +61,7 @@ export function Stats() {
               key={s.label}
               className="bg-ink-900 outline-ink-800 flex flex-col gap-3 p-6 outline outline-1 md:p-8"
             >
-              <dt className="text-mono text-ink-500 text-xs uppercase tracking-wider">
+              <dt className="text-mono text-ink-300 text-xs uppercase tracking-wider">
                 {s.label}
               </dt>
               <dd className="text-ink-50 text-4xl font-medium tracking-tight md:text-5xl">
