@@ -26,7 +26,7 @@ export function Hero() {
         <ScrollReveal delay={0.08} distance={24}>
           <h1 className="text-ink-900 dark:text-ink-50 max-w-4xl text-balance text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl lg:text-[5.5rem]">
             Game design, R&amp;D e tecnologie{' '}
-            <span className="text-accent-500">immersive</span>.
+            <span className="text-accent-600 dark:text-accent-500">immersive</span>.
           </h1>
         </ScrollReveal>
 

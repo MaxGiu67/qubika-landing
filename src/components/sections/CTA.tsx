@@ -24,7 +24,7 @@ export function CTA() {
           <h2 className="text-ink-900 dark:text-ink-50 mb-8 max-w-3xl text-balance text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
             Hai un’idea di gioco, un prototipo R&amp;D, un progetto
             immersivo?{' '}
-            <span className="text-accent-500">Parliamone.</span>
+            <span className="text-accent-600 dark:text-accent-500">Parliamone.</span>
           </h2>
         </ScrollReveal>
 
@@ -53,7 +53,7 @@ export function CTA() {
                 </p>
                 <span
                   aria-hidden="true"
-                  className="text-accent-500 mt-2 text-sm transition-transform duration-300 group-hover:translate-x-1"
+                  className="text-accent-600 dark:text-accent-500 mt-2 text-sm transition-transform duration-300 group-hover:translate-x-1"
                 >
                   Scrivici →
                 </span>
@@ -78,7 +78,7 @@ export function CTA() {
                 </p>
                 <span
                   aria-hidden="true"
-                  className="text-accent-500 mt-2 text-sm transition-transform duration-300 group-hover:translate-x-1"
+                  className="text-accent-600 dark:text-accent-500 mt-2 text-sm transition-transform duration-300 group-hover:translate-x-1"
                 >
                   Seguici →
                 </span>

@@ -119,7 +119,7 @@ export function Features() {
                 {c.items.map((item) => (
                   <li
                     key={item}
-                    className="before:text-accent-500 before:mr-2 before:content-['+']"
+                    className="before:text-accent-600 dark:before:text-accent-500 before:mr-2 before:content-['+']"
                   >
                     {item}
                   </li>
