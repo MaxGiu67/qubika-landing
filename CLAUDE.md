@@ -6,6 +6,14 @@ tech (gaming multi-piattaforma, serious games, VR/AR, AI, IoT, GIS).
 > Profilo cliente completo + scope: vedi memorie utente
 > `qubika-profilo.md` e `qubika-landing-scope.md`.
 
+## Link operativi
+
+- **Live**: https://qubika-landing-production.up.railway.app
+- **Repo**: https://github.com/MaxGiu67/qubika-landing (pubblico)
+- **Railway project**: `qubika-landing` (id `3a2393c7-1cdd-42b3-88ce-77b144dfc152`)
+- **Railway service**: `qubika-landing` (id `362f771c-fe1c-4a04-b4ad-4b4210b47403`)
+- **Region**: europe-west4 (Amsterdam)
+
 ## Stack
 
 - **React 19** + **TypeScript 6** (template Vite ufficiale)
@@ -92,6 +100,23 @@ Se la conversazione diventa lunga e serve compact:
 
 ## Deploy target
 
-**Railway** (default MUCC). Vedi `iridia-landing` in `~/mucc-knowledge-base/` per il pattern di riferimento (single package.json, build Vite servita da Express se servirà form contatti, altrimenti static buildpack).
+**Railway** (default MUCC) — già attivo e live.
 
-Setup deploy verrà eseguito via `/lp-deploy` quando la landing sarà pronta.
+Pattern usato: **Nixpacks Caddy-Vite preset** (zero-config). Railway rileva
+automaticamente Vite, builda `dist/` e serve i file via Caddy. Nessun runtime
+Node.js in produzione. Quando servirà un form contatti, valutare se passare a
+Express in monorepo come `iridia-landing` o restare statici con un endpoint
+serverless tipo Resend/Formspree.
+
+Comandi utili:
+
+```bash
+railway up --service qubika-landing            # nuovo deploy dal locale
+railway status --service qubika-landing        # stato del servizio
+railway logs --build --service qubika-landing  # logs di build
+railway logs --service qubika-landing          # logs runtime
+railway domain --service qubika-landing        # gestione dominio
+```
+
+Pin: `packageManager: "pnpm@10.20.0"` in `package.json` per allineare Railway
+alla versione pnpm locale ed evitare problemi con `--frozen-lockfile`.
