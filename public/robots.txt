@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qubika-landing-production.up.railway.app/sitemap.xml
+Sitemap: https://www.qubikasrl.it/sitemap.xml

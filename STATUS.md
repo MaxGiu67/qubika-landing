@@ -7,9 +7,12 @@
 
 | | |
 |--|--|
-| **Production** | https://qubika-landing-production.up.railway.app |
+| **Production (ufficiale)** | https://www.qubikasrl.it |
+| URL Railway (fallback) | https://qubika-landing-production.up.railway.app |
 | Repo | https://github.com/MaxGiu67/qubika-landing |
 | Railway project | [`qubika-landing`](https://railway.com/project/3a2393c7-1cdd-42b3-88ce-77b144dfc152) |
+| Cert HTTPS | Let's Encrypt (CN=www.qubikasrl.it), rinnovo automatico |
+| Dominio | Register.it, scadenza 27/05/2027 |
 
 ## Sezioni della landing
 

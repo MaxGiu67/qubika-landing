@@ -8,11 +8,18 @@ tech (gaming multi-piattaforma, serious games, VR/AR, AI, IoT, GIS).
 
 ## Link operativi
 
-- **Live**: https://qubika-landing-production.up.railway.app
+- **Live (dominio ufficiale)**: https://www.qubikasrl.it
+- **URL Railway (fallback)**: https://qubika-landing-production.up.railway.app
 - **Repo**: https://github.com/MaxGiu67/qubika-landing (pubblico)
 - **Railway project**: `qubika-landing` (id `3a2393c7-1cdd-42b3-88ce-77b144dfc152`)
 - **Railway service**: `qubika-landing` (id `362f771c-fe1c-4a04-b4ad-4b4210b47403`)
 - **Region**: europe-west4 (Amsterdam)
+- **Cert HTTPS**: Let's Encrypt (CN=www.qubikasrl.it), rinnovo automatico Railway
+- **Dominio registrato su**: Register.it (scadenza 27/05/2027)
+- **DNS configurati**:
+  - `CNAME www.qubikasrl.it → ffs89yns.up.railway.app`
+  - `TXT _railway-verify.www.qubikasrl.it → railway-verify=53951389bde71f222c551d2098fad70ce3c6429770e8b112014929f83344ad3e`
+  - PEC `qubikasrl@pec.it` (MX/SPF intatti — NON toccare)
 
 ## Stack
 
